@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "banomalies-ml-24"
+version = "0.1.0"
+description = "Analysis of the B-meson anomalies in the SMEFT using ML"
+authors = ["Jorge-Alda <jalda@unizar.es>"]
+readme = "README.md"
+packages = [{include = "banomalies_ml_24"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+smeft19 = {git = "https://github.com/Jorge-Alda/SMEFT19.git", rev = "jan-2023-recalc"}
+jupyterlab = "^4.2.0"
+setuptools = "^70.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
